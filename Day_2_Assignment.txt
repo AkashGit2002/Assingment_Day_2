@@ -1,0 +1,18 @@
+import numpy as np
+import pandas as pd
+
+df=pd.read_csv('/diabetes.csv')
+df.head()
+
+random_df=pd.DataFrame(np.random.rand(30,10))
+random_df.head()
+
+df.shape
+
+df.info()
+
+df.isnull().sum()
+
+df.value_counts('BloodPressure')
+
+df.info()
